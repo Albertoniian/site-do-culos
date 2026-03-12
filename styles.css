@@ -1,0 +1,97 @@
+/* styles.css */
+
+/* Estiliza o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte */
+    margin: 0; /* Remove margens padrões */
+    padding: 0; /* Remove padding padrão */
+    background-color: #f4f4f4; /* Define uma cor de fundo clara */
+}
+
+/* Container geral */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 20px;
+    background-color: white; /* Define o fundo branco para o conteúdo */
+    border-radius: 10px; /* Arredonda os cantos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #6a0dad; /* Cor de fundo roxa */
+    padding: 20px;
+    text-align: center; /* Centraliza o texto */
+    color: white; /* Cor do texto */
+}
+
+header h1 {
+    font-size: 2.5rem; /* Define o tamanho da fonte */
+    margin: 0; /* Remove margens */
+}
+
+/* Estilo para a seção principal */
+.main {
+    display: flex;
+    justify-content: space-between; /* Espaça as imagens e informações */
+    margin-top: 20px;
+}
+
+/* Estilo para as imagens */
+.images {
+    display: flex;
+    gap: 20px;
+}
+
+.images img {
+    width: 300px; /* Define o tamanho das imagens */
+    height: auto;
+    border-radius: 10px; /* Arredonda as bordas das imagens */
+}
+
+/* Estilo para as informações do produto */
+.info {
+    flex: 1; /* Ocupa o restante do espaço */
+    padding-left: 20px; /* Espaço à esquerda */
+}
+
+.info h2 {
+    font-size: 2rem; /* Tamanho do subtítulo */
+    color: #333; /* Cor do texto */
+}
+
+.info p {
+    font-size: 1rem;
+    color: #555; /* Cor do texto */
+    margin-bottom: 20px;
+}
+
+.info ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0;
+}
+
+.info li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #6a0dad; /* Cor de fundo roxa */
+    color: white;
+    padding: 20px;
+    text-align: center; /* Centraliza o texto */
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer strong {
+    font-weight: bold; /* Deixa o número de telefone e email em negrito */
+}
