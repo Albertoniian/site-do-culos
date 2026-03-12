@@ -83,11 +83,6 @@ footer {
     color: white;
     padding: 20px;
     text-align: center; /* Centraliza o texto */
-    margin-top: 0;
-}
-
-footer p {
-    margin: 0;
 }
 
 footer strong {
