@@ -1,90 +1,91 @@
-/* Estiliza o corpo da página */
-body {
-    font-family: Arial, sans-serif; /* Define a fonte */
-    margin: 0; /* Remove margens padrões */
-    padding: 0; /* Remove padding padrão */
-    background-color: #000000; /* Define uma cor de fundo clara */
-}
-
-/* Container geral */
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto; /* Centraliza o conteúdo */
-    padding: 20px;
-    background-color: white; /* Define o fundo branco para o conteúdo */
-    border-radius: 10px; /* Arredonda os cantos */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-}
-
-/* Estilo para o cabeçalho */
-header {
-    background-color: #6a0dad; /* Cor de fundo roxa */
-    padding: 20px;
-    text-align: center; /* Centraliza o texto */
-    color: white; /* Cor do texto */
-}
-
-header h1 {
-    font-size: 2.5rem; /* Define o tamanho da fonte */
-    margin: 0; /* Remove margens */
-}
-
-/* Estilo para a seção principal */
-.main {
-    display: flex;
-    justify-content: space-between; /* Espaça as imagens e informações */
-    margin-top: 20px;
-}
-
-/* Estilo para as imagens */
-.images {
-    display: flex;
-    gap: 20px;
-}
-
-.images img {
-    width: 300px; /* Define o tamanho das imagens */
-    height: auto;
-    border-radius: 10px; /* Arredonda as bordas das imagens */
-}
-
-/* Estilo para as informações do produto */
-.info {
-    flex: 1; /* Ocupa o restante do espaço */
-    padding-left: 20px; /* Espaço à esquerda */
-}
-
-.info h2 {
-    font-size: 2rem; /* Tamanho do subtítulo */
-    color: #333; /* Cor do texto */
-}
-
-.info p {
-    font-size: 1rem;
-    color: #555; /* Cor do texto */
-    margin-bottom: 20px;
-}
-
-.info ul {
-    list-style-type: none; /* Remove os marcadores da lista */
+/* Reset básico para remover margens e preenchimentos padrão */
+* {
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.info li {
-    font-size: 1rem;
-    margin-bottom: 10px;
-    color: #333;
+/* Cor de fundo principal */
+body {
+    background-color: #000000; /* Fundo preto */
+    color: #FFFFFF; /* Texto branco */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o corpo ocupe pelo menos a altura da tela */
 }
 
-/* Estilo do rodapé */
-footer {
-    background-color: #6a0dad; /* Cor de fundo roxa */
-    color: white;
+/* Cabeçalho */
+header {
+    background-color: #7D00DD; /* Cor roxa */
+    color: #FFFFFF; /* Texto branco */
     padding: 20px;
-    text-align: center; /* Centraliza o texto */
+    text-align: center;
 }
 
-footer strong {
-    font-weight: bold; /* Deixa o número de telefone e email em negrito */
+/* Layout da página */
+.container {
+    display: flex;
+    flex-grow: 1; /* Permite que o container cresça para ocupar o espaço disponível */
+}
+
+/* Faixa lateral esquerda */
+.sidebar {
+    background-color: #7D00DD; /* Cor roxa */
+    width: 130px;
+    padding: 20px;
+    height: 100%; /* Garante que a barra lateral ocupe toda a altura da página */
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin: 10px 0; /* Margem entre os botões */
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #FFFFFF; /* Texto branco */
+    font-size: 18px;
+    display: flex; /* Usar flexbox para centralizar o texto */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 100px; /* Largura total do botão */
+    height: 75px; /* Altura fixa para todos os botões */
+    background-color: #000000; /* Cor de fundo do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.sidebar a:hover {
+    background-color: #545454; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo do conteúdo principal */
+.content {
+    flex-grow: 1; 
+    padding: 20px;
+}
+
+/* Estilo das caixas de conteúdo */
+.content-box {
+    background-color: #333333; /* Cor de fundo das caixas */
+    color: #FFFFFF; /* Cor do texto */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 15px; /* Espaçamento interno */
+    margin: 15px 0; /* Margem superior e inferior */
+}
+
+/* Rodapé */
+footer {
+    background-color: #7D00DD; /* Cor roxa */
+    color: #FFFFFF; /* Texto branco */
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Fixa o rodapé na parte inferior */
+    bottom: 0; /* Posiciona o rodapé na parte inferior da página */
+    left: 0;
+    right: 0; /* Garante que o rodapé ocupe toda a largura da página */
 }
