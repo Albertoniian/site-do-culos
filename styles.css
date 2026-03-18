@@ -42,6 +42,7 @@ header {
     border-radius: 5px; /* Bordas arredondadas */
     padding: 15px; /* Espaçamento interno */
     margin: 15px 0; /* Margem superior e inferior */
+    line-height: 1.6;
 }
 
 /* Rodapé */
