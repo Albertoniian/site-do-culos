@@ -44,6 +44,9 @@ header {
     margin: 15px 0; /* Margem superior e inferior */
     line-height: 1.6;
 }
+.content-box p {
+    margin-bottom: 10px;
+}
 
 /* Rodapé */
 footer {
