@@ -48,6 +48,18 @@ header {
 .content-box p {
     margin-bottom: 10px;
 }
+.content-img {
+    background-color: #333333; /* Cor de fundo das caixas */
+    color: #FFFFFF; /* Cor do texto */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 15px; /* Espaçamento interno */
+    margin: 15px 0; /* Margem superior e inferior */
+    line-height: 1.6;
+    text-align: center;
+  
+}
+.content-img p {
+    margin-bottom: 10px;
 
 /* Rodapé */
 footer {
